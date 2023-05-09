@@ -5,5 +5,14 @@ def find_min(data):
         data: list of numbers
     returns: minimum number in the list
     """
+    a=data[0]
+    i=0
+    while i<len(data):
 
-    return 0
+        if a>data[i]:
+            a=data[i]
+            
+        i+=1
+
+    return a
+print(find_min([17,18,-1,29,12]))
